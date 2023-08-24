@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App - Sabeh Shaikh</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -17,30 +18,56 @@
         </div>
 
         <div class="weather">
-            <img src="images/rain.png" class="weather-icon">
-            <h1 class="temp">22°c</h1>
-            <h2 class="city">Karachi</h2>
+            <img src="images/thunderstorms.svg" class="weather-icon">
+            <h1 class="temp"></h1>
+            <h2 class="city"></h2>
+            <h5 class="country"></h5>
+            <h6 id="date"></h6>
 
             <div class="details">
                 <div class="col">
                     <img src="images/humidity.png">
                     <div>
-                        <p class="humidity">50%</p>
-                        <p> Humidity</p>
+                        <p class="humidity"></p>
+                        <p> </p>
                     </div>
                 </div>
                 <div class="col">
                     <img src="images/wind.png">
                     <di>
-                        <p class="wind">16 km/h</p>
-                        <p>Wind Speed</p>
+                        <p class="wind"></p>
+                        <p></p>
                 </div>
+
             </div>
         </div>
     </div>
     </div>
 
+    <div class="media-buttons">
+        <a href="https://www.facebook.com/Sabeh420/" style="background-color: #4267b2;" class="links">
+            <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="https://github.com/SabehShaikh" style="background-color: #333;" class="links">
+            <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://twitter.com/shaikh_sabeh" style="background-color: #1DA1F2;" class="links">
+            <i class='bx bxl-twitter'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sabeh-shaikh-016623245/" style="background-color: #0A66C2;" class="links">
+            <i class='bx bxl-linkedin'></i>
+        </a>
+    </div>
+
+
+    <script src="
+https://cdn.jsdelivr.net/npm/luxon@3.4.1/build/global/luxon.min.js
+"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
